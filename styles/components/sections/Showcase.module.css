@@ -20,14 +20,12 @@
   font-size: 1.5rem;
 }
 .showcaseSection .showcaseGallery {
-  border: 1px dotted lightgreen;
   height: 60vh;
   display: flex;
   flex-direction: column;
   background-color: brown;
 }
 .showcaseSection .showcaseGallery .row {
-  border: 1px dashed solid gold;
   display: flex;
   flex-direction: row;
   height: 50%;
@@ -39,7 +37,6 @@
   height: 100%;
   margin: 0;
   padding: 0;
-  border: 1px dashed red;
   background-position: center;
 }
 .showcaseSection .showcaseGallery .row .projectBoxShadow .projectBox {

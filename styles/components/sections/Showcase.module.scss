@@ -1,4 +1,4 @@
-$projectHoverImg: url('./../../imgs/showcase/gold-foil.png');
+$projectHoverImg: url('./../../../imgs/showcase/gold-foil.png');
 
 
 
@@ -28,14 +28,14 @@ $projectHoverImg: url('./../../imgs/showcase/gold-foil.png');
     }
 
     .showcaseGallery{
-        border: 1px dotted lightgreen;
+        // border: 1px dotted lightgreen;
         height: 60vh;
         display: flex;
         flex-direction: column;
         background-color: brown;
 
         .row{
-            border: 1px dashed solid gold;
+            // border: 1px dashed solid gold;
             display: flex;
             flex-direction: row;
             height: 50%;
@@ -48,7 +48,7 @@ $projectHoverImg: url('./../../imgs/showcase/gold-foil.png');
                 margin: 0;
                 padding: 0;
                 // background-color: green;
-                border: 1px dashed red;
+                // border: 1px dashed red;
                 background-position: center;
 
 

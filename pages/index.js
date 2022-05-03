@@ -3,9 +3,9 @@ import Image from 'next/image'
 import styles from '../styles/index.module.scss'
 
 //Components
-import HeroSection from '../components/HeroSection';
-import ShowcaseSection from './../components/Showcase';
-import AboutSection from './../components/About';
+import HeroSection from '../components/sections/HeroSection';
+import ShowcaseSection from '../components/sections/ShowcaseSection';
+import AboutSection from '../components/sections/AboutSection';
 
 export default function Home() {
   return (

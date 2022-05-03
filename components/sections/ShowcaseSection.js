@@ -1,6 +1,6 @@
-import styles from './../styles/sections/Showcase.module.scss';
-import ShowcaseBackgroundImg from './../imgs/backgrounds/showcaseBackgroundImg.png';
-import dumbyImg from './../imgs/showcase/dumby-img.jpg';
+import styles from './../../styles/components/sections/Showcase.module.scss';
+import ShowcaseBackgroundImg from './../../imgs/backgrounds/showcaseBackgroundImg.png';
+import dumbyImg from './../../imgs/showcase/dumby-img.jpg';
 import Link from 'next/link';
 
 // const projects.image = dumbyImg.src

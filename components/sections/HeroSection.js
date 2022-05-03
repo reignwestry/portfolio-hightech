@@ -1,9 +1,9 @@
 
 import Link from 'next/link';
-import Header from './Header';
+import Header from '../Header';
 
-import styles from './../styles/sections/HeroSection.module.scss';
-import HeroBackground from './../imgs/backgrounds/heroBackgroundImage.png';
+import styles from './../../styles/components/sections/HeroSection.module.scss';
+import HeroBackground from './../../imgs/backgrounds/heroBackgroundImage.png';
 
 
 export default function HeroSection() {

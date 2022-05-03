@@ -1,5 +1,20 @@
 .headerSection {
-  background-color: black;
-  border: 1px dashed red;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  height: 6.4vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.headerSection .headerTitle {
+  margin: 0 5vw;
+  color: #00f14a;
+  text-shadow: -2px 1px #f7b304;
+  width: 20vw;
+  height: 100%;
+  text-align: center;
+  padding: 0;
+  font-size: 3em;
 }
 /*# sourceMappingURL=Header.module.css.map */

@@ -1,12 +1,17 @@
+import Link from 'next/link';
+
+import styles from './../styles/components/Nav.module.scss'
+
+
 export default function Nav() {
     return (
-        <nav>
+        <nav className={styles.mainNav}>
             <ul>
-                <li>Home</li>
-                <li>Gallery</li>
-                <li>About</li>
-                <li>Resume</li>
-                <li>Contact</li>
+                <li><Link href='/'>Home</Link></li>
+                <li><Link href='/gallery'>Gallery</Link></li>
+                <li><Link href='/about'>About</Link></li>
+                <li><Link href='/resume'>Resume</Link></li>
+                <li><Link href='/contact'>Contact</Link></li>
             </ul>
         </nav>
     );

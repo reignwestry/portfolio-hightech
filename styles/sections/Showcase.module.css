@@ -1,0 +1,67 @@
+.showcaseSection {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  border: 1px dashed red;
+}
+.showcaseSection .sectionHeader {
+  border: 1px dashed lightblue;
+  width: 30vw;
+  margin-top: 15vh;
+  margin-left: 7vw;
+}
+.showcaseSection .sectionHeader h1 {
+  color: white;
+  margin: auto 0 0 0;
+}
+.showcaseSection .sectionHeader span {
+  color: white;
+  font-size: 1.5rem;
+}
+.showcaseSection .showcaseGallery {
+  border: 1px dotted lightgreen;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-color: brown;
+}
+.showcaseSection .showcaseGallery .row {
+  border: 1px dashed solid gold;
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow {
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 1px dashed red;
+  background-position: center;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow .projectBox {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow .projectBox:hover {
+  background-image: url("./../../imgs/showcase/gold-foil.png");
+  opacity: 0.7;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow .projectBox:hover .projectData {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  opacity: none;
+  color: green;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow .projectBox .projectData {
+  display: none;
+  color: white;
+}
+/*# sourceMappingURL=Showcase.module.css.map */

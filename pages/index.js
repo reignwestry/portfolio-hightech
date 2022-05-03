@@ -4,11 +4,20 @@ import styles from '../styles/index.module.scss'
 
 //Components
 import HeroSection from '../components/HeroSection';
+import ShowcaseSection from './../components/Showcase';
+import AboutSection from './../components/About';
 
 export default function Home() {
   return (
+
     <div className={styles.container}>
+      <Head>
+        <title>Reign Westry | Home</title>
+        <meta name="keywords" content="web development gallery" />
+      </Head>
       <HeroSection />
+      <ShowcaseSection />
+      <AboutSection />
 
 
       {/* <Head>

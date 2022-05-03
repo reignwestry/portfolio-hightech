@@ -1,3 +1,33 @@
-Header{
+//Nav
+.mainNav{
+    // background-color: white;
+    border: 1px dashed red;
+    color: white;
+    width: 70vw;
+    margin: 0 5vw;
     
+
+    ul{
+        
+        height: 100%;
+        margin: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        justify-content: space-between;
+
+        li{
+            border: 1px dashed lightblue;
+            width: 25%;
+            text-decoration: none;
+            text-align: center;
+            padding: 1%;
+            margin: 0 auto;
+            color: #0af5fe;
+
+            
+            justify-item: center;
+        }
+    }
 }

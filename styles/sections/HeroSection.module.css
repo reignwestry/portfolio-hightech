@@ -1,0 +1,45 @@
+.heroSection {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.heroSection .heroMessageBox {
+  color: white;
+  border: 1px dashed red;
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  height: 40vh;
+  margin-top: 30vh;
+  font-size: 4rem;
+  justify-content: space-evenly;
+}
+.heroSection .heroMessageBox p {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+.heroSection .heroMessageBox p .keywordOne {
+  color: #00f14a;
+  font-weight: 500;
+}
+.heroSection .heroMessageBox p .keywordTwo {
+  color: #f7b304;
+  font-weight: 500;
+}
+.heroSection .heroMessageBox .contactBtnBox {
+  border: 1px dashed;
+  width: 40%;
+  justify-items: right;
+}
+.heroSection .heroMessageBox .contactBtnBox .contactBtn {
+  background-color: #4a3103;
+  width: 60%;
+  height: 20%;
+  font-size: 2rem;
+  box-shadow: -2px 2px #00f14a;
+  border-radius: 12% 12%;
+}
+/*# sourceMappingURL=HeroSection.module.css.map */

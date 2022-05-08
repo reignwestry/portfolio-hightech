@@ -1,6 +1,220 @@
-.const {
-  border: 1px dashed red;
+.headerSection {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffff;
+  height: 6.4vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.headerSection .headerTitle {
+  margin: 0 5vw;
+  color: #00f14a;
+  text-shadow: -2px 1px #f7b304;
+  width: 20vw;
+  height: 100%;
+  text-align: center;
   padding: 0;
+  font-size: 3em;
+}
+
+.mainNav {
+  color: #ffff;
+  width: 70vw;
+  margin: 0 5vw;
+}
+.mainNav ul {
+  height: 100%;
   margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-between;
+}
+.mainNav ul li {
+  border: 1px dashed #0af5fe;
+  width: 25%;
+  text-decoration: none;
+  text-align: center;
+  padding: 1%;
+  margin: 0 auto;
+  color: #0af5fe;
+  justify-item: center;
+}
+
+.heroSection {
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.heroSection .heroMessageBox {
+  color: #ffff;
+  display: flex;
+  flex-direction: row;
+  width: 70vw;
+  height: 40vh;
+  margin-top: 30vh;
+  font-size: 4rem;
+  justify-content: space-evenly;
+}
+.heroSection .heroMessageBox p {
+  margin: 0;
+  padding: 0;
+  font-weight: 100;
+}
+.heroSection .heroMessageBox p .keywordOne {
+  color: #00f14a;
+  font-weight: 500;
+}
+.heroSection .heroMessageBox p .keywordTwo {
+  color: #f7b304;
+  font-weight: 500;
+}
+.heroSection .heroMessageBox .contactBtnBox {
+  border: 1px dashed;
+  width: 40%;
+  justify-items: right;
+}
+.heroSection .heroMessageBox .contactBtnBox .contactBtn {
+  background-color: #4a3103;
+  width: 60%;
+  height: 20%;
+  font-size: 2rem;
+  box-shadow: -2px 2px #00f14a;
+  border-radius: 12% 12%;
+}
+
+.aboutSection {
+  width: 100vw;
+  height: 100vh;
+  color: #ffff;
+  margin: 0;
+  border: 1px dashed;
+}
+.aboutSection .aboutMessage {
+  border: 1px dashed;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  width: 70%;
+  font-size: 1.6rem;
+}
+.aboutSection .aboutMessage .knowledgePathBox {
+  display: flex;
+  flex-direction: row;
+}
+.aboutSection .aboutMessage .knowledgePathBox .knowledgePathColumn {
+  width: 25%;
+}
+.aboutSection .aboutMessage .knowledgePathBox .knowledgePathColumn ul {
+  color: #f7b304;
+}
+.aboutSection .aboutMessage .knowledgePathBox .knowledgePathColumn ul .listTitle {
+  list-style: none;
+  color: #00f14a;
+}
+.aboutSection .aboutMessage .knowledgePathBox .knowledgePathColumn ul li {
+  text-align: center;
+}
+.aboutSection .aboutMessage .knowledgePathBox .knowledgePathColumn .toolsList {
+  color: #0af5fe;
+}
+
+.showcaseSection {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+.showcaseSection .sectionHeader {
+  border: 1px dashed #0af5fe;
+  width: 30vw;
+  margin-top: 15vh;
+  margin-left: 7vw;
+}
+.showcaseSection .sectionHeader h1 {
+  color: #ffff;
+  margin: auto 0 0 0;
+}
+.showcaseSection .sectionHeader span {
+  color: white;
+  font-size: 1.5rem;
+}
+.showcaseSection .showcaseGallery {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #4a3103;
+}
+.showcaseSection .showcaseGallery .row {
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  margin: 0;
+  padding: 0;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow {
+  width: 25%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-position: center;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow .projectBox {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow .projectBox:hover {
+  background-image: url("./../../imgs/showcase/gold-foil.png");
+  opacity: 0.8;
+}
+.showcaseSection .showcaseGallery .row .projectBoxShadow .projectBox:hover .projectData {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  opacity: none;
+  color: #00f14a;
+}
+.showcaseSection .projectData {
+  width: 100%;
+  height: 100%;
+  display: none;
+  font-size: 1.5rem;
+}
+.showcaseSection .projectData .projectBasicData {
+  height: 25%;
+}
+.showcaseSection .projectData .projectBasicData h2 {
+  font-weight: 700;
+  height: 50%;
+  margin: 0;
+}
+.showcaseSection .projectData .projectTechData {
+  margin: 0;
+  background-color: black;
+  height: 50%;
+  margin-bottom: 0;
+}
+.showcaseSection .projectData .projectTechData .gLink:hover {
+  color: #0af5fe;
+}
+.showcaseSection .projectData .techTypes {
+  font-size: 1.2rem;
+  color: #ffff;
+}
+.showcaseSection .projectData .techTypes h4 {
+  font-weight: 700;
+}
+
+.footerSection {
+  color: yellow;
+  background-color: black;
+  margin: 0;
+  padding: 0;
 }
 /*# sourceMappingURL=index.module.css.map */

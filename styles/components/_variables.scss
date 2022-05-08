@@ -1,0 +1,15 @@
+//colors
+$Primary-color: #00f14a;
+$Secondary-color: #4a3103;
+$Third-color: #ffff;
+$Fourth-color: #f7b304;
+$Fifth-color: #0af5fe;
+
+//IMGS
+$projectHoverImg: url('./../../imgs/showcase/gold-foil.png');
+
+
+//FONTS
+@mixin Primary-font{
+    font-family: "Bodoni Std", serif;
+} 

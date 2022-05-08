@@ -2,14 +2,14 @@
 import Link from 'next/link';
 import Header from '../Header';
 
-import styles from './../../styles/components/sections/HeroSection.module.scss';
+import styles from './../../styles/index.module.scss';
 import HeroBackground from './../../imgs/backgrounds/heroBackgroundImage.png';
 
 
 export default function HeroSection() {
 
     return (
-        <section className={styles.heroSection} style={{
+        <div className={styles.heroSection} style={{
             backgroundImage: `url(${HeroBackground.src})`}}>
             <Header />
 
@@ -21,6 +21,6 @@ export default function HeroSection() {
                 </div>
            </div>
 
-        </section>
+        </div>
     )
 }

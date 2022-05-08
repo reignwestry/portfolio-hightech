@@ -1,0 +1,59 @@
+@use './../components/variables';
+@use './../components/mixins';
+
+
+.aboutSection{
+    width: 100vw;
+    height: 100vh;
+    color: variables.$Third-color;
+    margin: 0;
+    // border: 1px dashed;
+
+    .sectionHeader{
+        // border: 1px dashed;
+        height:  10vh;
+        @include mixins.FontStyleOne;
+    }
+
+    .aboutMessage{
+        // border: 1px dashed ;
+        margin-top: 10vh;
+        margin-left: 5vw;
+        width: 70%;
+        font-size: 1.6rem;
+
+        .aboutFirstMessage{
+            // border: 1px dashed;
+            margin-bottom: 8vh;
+        }
+
+        .knowledgePathBox{
+            display: flex;
+            flex-direction: row;
+
+            .knowledgePathColumn{
+                width: 25%;
+
+                ul{
+                    color: variables.$Fourth-color;
+
+
+                    .listTitle{
+                        list-style:none;
+                        color: variables.$Primary-color;
+                    }
+                    
+                    li{
+                        text-align: center;
+                    }
+                }
+
+                .toolsList{
+                    color: variables.$Fifth-color;
+                }
+            }
+
+        }
+    }
+}
+

@@ -1,0 +1,21 @@
+@use './variables';
+
+
+
+
+@mixin Primary-font{
+    font-family: "Bodoni Std", serif;
+} 
+
+@mixin FontStyleOne{
+        margin: 0 5vw ;
+        // margin-left: 10vw;
+        color: variables.$Primary-color;
+        text-shadow: -2px 1px variables.$Fourth-color;
+        width: 20vw;
+        // border: 1px dashed;
+        height: auto;
+        text-align: center;
+        padding: 0;
+        font-size: 3em;
+}

@@ -1,4 +1,4 @@
-import styles from '../styles/components/Header.module.scss'
+import styles from '../styles/index.module.scss';
 import Nav from './Nav';
 
 export default function Header() {

@@ -6,6 +6,7 @@
     margin: 0;
     padding: 0;
     width: 100vw;
+    @include mixins.parallaxBackground;
 
     .sectionHeader{
         height: 10vh;
@@ -52,12 +53,14 @@
                 margin: 0;
                 padding: 0;
                 background-position: center;
+                background-size: cover;
                 
                 .projectBox{
                     width: 100%;
                     height: 100%;
                     margin: 0;
                     padding: 0;
+                    border-radius: 10px;
 
                     &:hover{
                         background-image: variables.$projectHoverImg;
@@ -120,4 +123,37 @@
 
     }
 
+}
+
+
+@media screen and (max-width: 768px){
+
+    .showcaseSection{
+        height: 475vh;
+
+        .showcaseGallery{
+            width: 95%;
+            margin: 0 auto;
+            height: 400vh;
+            // border: 1px dashed red;
+            display: flex;
+            flex-direction: column;
+
+
+            .row{
+                display: flex;
+                flex-direction: column;
+                height:auto;
+                // background: yellow;
+                width: 100%;
+                height: 200vh;
+
+                .projectBoxShadow, .projectBox{
+                    width: 690px;
+                    height: 700px;
+                    background: cover;
+                }
+            }
+        }
+    }
 }

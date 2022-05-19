@@ -13,7 +13,7 @@ import Link from 'next/link';
 //     tech: "HTML, CSS, JavaScript, etc",
 //     link: "/project/path"
 // }
-
+//todo finish mobile responsive
 //todo convert projectRow to a map function
 export default function Showcase(props) {
     return (

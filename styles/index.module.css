@@ -1,3 +1,8 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
 .headerSection {
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffff;
@@ -52,11 +57,12 @@
 }
 .heroSection .heroMessageBox {
   color: #ffff;
+  border: 1px dashed red;
   display: flex;
   flex-direction: row;
   width: 70vw;
-  height: 40vh;
-  margin-top: 30vh;
+  height: 20vh;
+  margin-top: 40vh;
   font-size: 4rem;
   justify-content: space-evenly;
 }
@@ -75,7 +81,7 @@
 }
 .heroSection .heroMessageBox .contactBtnBox {
   border: 1px dashed;
-  width: 40%;
+  width: 20vw;
   justify-items: right;
 }
 .heroSection .heroMessageBox .contactBtnBox .contactBtn {
@@ -92,14 +98,29 @@
   height: 100vh;
   color: #ffff;
   margin: 0;
-  border: 1px dashed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.aboutSection .sectionHeader {
+  height: 10vh;
+  margin: 0 5vw;
+  color: #00f14a;
+  text-shadow: -2px 1px #f7b304;
+  width: 20vw;
+  height: auto;
+  text-align: center;
+  padding: 0;
+  font-size: 3em;
 }
 .aboutSection .aboutMessage {
-  border: 1px dashed;
   margin-top: 10vh;
   margin-left: 5vw;
   width: 70%;
   font-size: 1.6rem;
+}
+.aboutSection .aboutMessage .aboutFirstMessage {
+  margin-bottom: 8vh;
 }
 .aboutSection .aboutMessage .knowledgePathBox {
   display: flex;
@@ -123,24 +144,37 @@
 }
 
 .showcaseSection {
-  width: 100vw;
   height: 100vh;
   margin: 0;
   padding: 0;
+  width: 100vw;
 }
 .showcaseSection .sectionHeader {
-  border: 1px dashed #0af5fe;
+  height: 10vh;
   width: 30vw;
-  margin-top: 15vh;
+  margin: 0;
   margin-left: 7vw;
+  margin-bottom: 15vh;
+  padding-top: 3vh;
 }
 .showcaseSection .sectionHeader h1 {
-  color: #ffff;
-  margin: auto 0 0 0;
+  color: #00f14a;
+  height: 7vh;
+  margin-top: 0;
+  text-align: center;
+  margin: 0 5vw;
+  color: #00f14a;
+  text-shadow: -2px 1px #f7b304;
+  width: 20vw;
+  height: auto;
+  text-align: center;
+  padding: 0;
+  font-size: 3em;
 }
-.showcaseSection .sectionHeader span {
-  color: white;
+.showcaseSection span {
+  color: #ffff;
   font-size: 1.5rem;
+  margin-left: 5vw;
 }
 .showcaseSection .showcaseGallery {
   height: 60vh;
@@ -209,6 +243,17 @@
 }
 .showcaseSection .projectData .techTypes h4 {
   font-weight: 700;
+}
+
+.contactSection {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  border: 1px dashed lightblue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .footerSection {

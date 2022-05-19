@@ -1,6 +1,6 @@
 
 import styles from './../../styles/index.module.scss';   
-import HeroBackground from './../../imgs/backgrounds/heroBackgroundImage.png';
+import HeroBackground from './../../imgs/backgrounds/aboutSection.png';
 
 //todo import FontAwesome from './FontAwesomeLibrary';
 

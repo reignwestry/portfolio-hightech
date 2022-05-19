@@ -7,7 +7,9 @@
     height: 100vh;
     color: variables.$Third-color;
     margin: 0;
-    // border: 1px dashed;
+    @include mixins.parallaxBackground;
+
+
 
     .sectionHeader{
         // border: 1px dashed;

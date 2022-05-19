@@ -6,7 +6,7 @@ import ShowcaseSection from '../components/sections/ShowcaseSection';
 import AboutSection from '../components/sections/AboutSection';
 import FooterSection from '../components/sections/Footer';
 
-import styles from './../styles/pages/ResumePage.module.scss'
+import styles from './../styles/pages/ResumePage.module.scss';
 
 export default function Resume() {
     return (

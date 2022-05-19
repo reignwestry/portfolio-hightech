@@ -16,9 +16,18 @@ export default function HeroSection() {
             <div className={styles.heroMessageBox}>
                 <p>Hi, I am <span className={styles.keywordOne}>Reign</span>,<br /><span className={styles.keywordTwo}>Full-Stack</span> Developer</p>
                 
-                <div className={styles.contactBtnBox}>
-                    <Link className={styles.contactBtn} href='/contact'>Contact Me Now</Link>
-                </div>
+                <Link href='/contact' passHref>
+                    <button className={styles.contactBtn} type="button">
+                        <div>
+                            <div className={styles.contactBtnText}>
+                                Contact Me Now
+
+                            </div>
+                        </div>
+                        
+                    </button>
+
+                </Link>
            </div>
 
         </div>

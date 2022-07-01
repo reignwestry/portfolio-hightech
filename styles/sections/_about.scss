@@ -18,7 +18,6 @@
     }
 
     .aboutMessage{
-        // border: 1px dashed ;
         margin-top: 10vh;
         margin-left: 5vw;
         width: 70%;
@@ -34,19 +33,21 @@
             flex-direction: row;
 
             .knowledgePathColumn{
-                width: 25%;
+                width: 32%;
 
                 ul{
                     color: variables.$Fourth-color;
+                    list-style:none;
 
 
                     .listTitle{
-                        list-style:none;
+                        // list-style:none;
                         color: variables.$Primary-color;
                     }
                     
                     li{
                         text-align: center;
+                        text-decoration: none;
                     }
                 }
 
@@ -59,3 +60,18 @@
     }
 }
 
+@media screen and (max-width: 768px){
+    .aboutSection{
+        height: auto;
+    }
+    .aboutMessage{
+        width: 90%;
+        .knowledgePathBox{
+            width: 100%;
+            font-size: 80%;
+            .knowledgePathColumn{
+                width: 30%;
+            }
+        }
+    }
+}

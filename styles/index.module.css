@@ -28,7 +28,7 @@
 }
 .headerSection {
   background-color: rgba(0, 0, 0, 0.5);
-  color: #ffff;
+  color: white;
   height: 6.4vh;
   width: 100%;
   display: flex;
@@ -37,7 +37,7 @@
 }
 .headerSection .headerTitle {
   margin: 0 5vw;
-  color: #00f14a;
+  color: rgb(0, 241, 74);
   text-shadow: -2px 1px rgba(247, 179, 4, 0.7);
   width: 20vw;
   height: 100%;
@@ -47,7 +47,7 @@
 }
 
 .mainNav {
-  color: #ffff;
+  color: white;
   width: 70vw;
   margin: 0 5vw;
 }
@@ -64,14 +64,14 @@
   justify-content: space-between;
 }
 .mainNav ul li {
-  border: 0.5px solid #0af5fe;
+  border: 0.5px solid rgb(10, 245, 254);
   border-radius: 10px;
   width: 25%;
   text-decoration: none;
   text-align: center;
   padding: 1%;
   margin: 0 auto;
-  color: #0af5fe;
+  color: rgb(10, 245, 254);
   font-size: 1.6rem;
   justify-items: space-around;
   background-position: center;
@@ -85,7 +85,7 @@
 }
 .mainNav ul li:before {
   content: "";
-  background: linear-gradient(45deg, #00f14a, #4a3103, #fff, #f7b304, #0af5fe);
+  background: linear-gradient(45deg, rgb(0, 241, 74), #4a3103, #fff, rgb(247, 179, 4), rgb(10, 245, 254));
   position: absolute;
   top: -3px;
   left: -3px;
@@ -129,13 +129,13 @@
     top: 8%;
     left: 54vw;
     background-color: blue;
-    fill: #00f14a;
+    fill: rgb(0, 241, 74);
     border-radius: 50%;
-    border: 2px solid #00f14a;
+    border: 2px solid rgb(0, 241, 74);
     box-shadow: 1px 3px rgba(0, 0, 0, 0.5);
   }
   .mainNav .hamburger:focus {
-    background-color: #00f14a;
+    background-color: rgb(0, 241, 74);
   }
   .mainNav .navMenu {
     display: none;
@@ -160,7 +160,7 @@
     font-size: 4rem;
   }
   .mainNav .navMenuExpanded ul li:hover {
-    color: #00f14a;
+    color: rgb(0, 241, 74);
   }
   .mainNav .navMenuExpanded ul li:focus {
     color: blue;
@@ -168,7 +168,7 @@
   }
 }
 .heroSection {
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -179,7 +179,7 @@
   padding: 0;
 }
 .heroSection .heroMessageBox {
-  color: #ffff;
+  color: white;
   display: flex;
   flex-direction: row;
   width: 80vw;
@@ -194,7 +194,7 @@
   font-weight: 100;
 }
 .heroSection .heroMessageBox p .keywordOne {
-  color: #00f14a;
+  color: rgb(0, 241, 74);
   font-weight: 500;
 }
 .heroSection .heroMessageBox p .keywordTwo {
@@ -202,7 +202,7 @@
   font-weight: 500;
 }
 .heroSection .heroMessageBox .contactBtn {
-  border: 0.5px solid #0af5fe;
+  border: 0.5px solid rgb(10, 245, 254);
   width: 30%;
   justify-items: right;
   font-size: 3rem;
@@ -214,7 +214,7 @@
 }
 .heroSection .heroMessageBox .contactBtn:before {
   content: "";
-  background: linear-gradient(45deg, #00f14a, #4a3103, #fff, #f7b304, #0af5fe);
+  background: linear-gradient(45deg, rgb(0, 241, 74), #4a3103, #fff, rgb(247, 179, 4), rgb(10, 245, 254));
   position: absolute;
   top: -3px;
   left: -3px;
@@ -250,38 +250,10 @@
   border-radius: 10px;
 }
 
-@media screen and (max-width: 768px) {
-  .heroMessageBox {
-    width: 95vw;
-    height: 50vh;
-    left: 10vw;
-    border: 1px dashed yellow;
-  }
-  .heroMessageBox p {
-    font-size: 3rem;
-    margin-left: 3%;
-  }
-  .heroMessageBox .keywordOne {
-    color: #00f14a;
-    font-weight: 500;
-  }
-  .heroMessageBox .keywordTwo {
-    color: rgba(247, 179, 4, 0.7);
-    font-weight: 500;
-  }
-  .heroMessageBox .contactBtn {
-    font-size: 2.2rem;
-    font-weight: 500;
-    width: 20vw;
-  }
-  .heroMessageBox .contactBtn .contactBtnText {
-    background: green;
-  }
-}
 .aboutSection {
   width: 100vw;
   height: 100vh;
-  color: #ffff;
+  color: white;
   margin: 0;
   background-size: cover;
   background-position: center;
@@ -291,7 +263,7 @@
 .aboutSection .sectionHeader {
   height: 10vh;
   margin: 0 5vw;
-  color: #00f14a;
+  color: rgb(0, 241, 74);
   text-shadow: -2px 1px rgba(247, 179, 4, 0.7);
   width: 20vw;
   height: auto;
@@ -320,21 +292,20 @@
   list-style: none;
 }
 .aboutSection .aboutMessage .knowledgePathBox .knowledgePathColumn ul .listTitle {
-  color: #00f14a;
+  color: rgb(0, 241, 74);
 }
 .aboutSection .aboutMessage .knowledgePathBox .knowledgePathColumn ul li {
   text-align: center;
   text-decoration: none;
 }
 .aboutSection .aboutMessage .knowledgePathBox .knowledgePathColumn .toolsList {
-  color: #0af5fe;
+  color: rgb(10, 245, 254);
 }
 
 @media screen and (max-width: 768px) {
   .aboutSection {
     height: auto;
   }
-
   .aboutMessage {
     width: 90%;
   }
@@ -365,12 +336,12 @@
   padding-top: 3vh;
 }
 .showcaseSection .sectionHeader h1 {
-  color: #00f14a;
+  color: rgb(0, 241, 74);
   height: 7vh;
   margin-top: 0;
   text-align: center;
   margin: 0 5vw;
-  color: #00f14a;
+  color: rgb(0, 241, 74);
   text-shadow: -2px 1px rgba(247, 179, 4, 0.7);
   width: 20vw;
   height: auto;
@@ -379,7 +350,7 @@
   font-size: 3em;
 }
 .showcaseSection span {
-  color: #ffff;
+  color: white;
   font-size: 1.5rem;
   margin-left: 5vw;
 }
@@ -421,7 +392,7 @@
   padding: 0;
   text-align: center;
   opacity: none;
-  color: #00f14a;
+  color: rgb(0, 241, 74);
 }
 .showcaseSection .projectData {
   width: 100%;
@@ -439,16 +410,16 @@
 }
 .showcaseSection .projectData .projectTechData {
   margin: 0;
-  background-color: black;
+  background-color: rgb(0, 0, 0);
   height: 50%;
   margin-bottom: 0;
 }
 .showcaseSection .projectData .projectTechData .gLink:hover {
-  color: #0af5fe;
+  color: rgb(10, 245, 254);
 }
 .showcaseSection .projectData .techTypes {
   font-size: 1.2rem;
-  color: #ffff;
+  color: white;
 }
 .showcaseSection .projectData .techTypes h4 {
   font-weight: 700;
@@ -495,7 +466,7 @@
 }
 .contactSection .titleBox .contactHeader {
   margin: 0 5vw;
-  color: #00f14a;
+  color: rgb(0, 241, 74);
   text-shadow: -2px 1px rgba(247, 179, 4, 0.7);
   width: 20vw;
   height: auto;
@@ -516,145 +487,51 @@
   color: white;
   font-size: 2rem;
 }
+.contactSection .contactInfoBox p {
+  margin: 1%;
+  margin-left: 3%;
+  width: 38vw;
+}
 
 .contactFormBox {
   display: flex;
   flex-direction: row;
 }
 
-.contactForm {
-  border: 0.5px solid #0af5fe;
-  border-radius: 10px;
-  width: 40vw;
-  height: 80vh;
-  margin-left: 5vh;
-}
-.contactForm .dataBox {
-  display: flex;
-  flex-direction: row;
-}
-.contactForm .dataBox fieldset {
-  width: 48%;
-  height: 100%;
-  border: none;
-  margin-left: 2%;
-  margin-top: 1.5vh;
-}
-.contactForm .dataBox fieldset input {
-  width: 80%;
-  height: 5vh;
-  font-size: 2rem;
-  padding-left: 15px;
-  border: none;
-  border-bottom: 1px solid #00f14a;
-  border-width: thick;
-  background: none;
-  margin: 0 auto;
-  color: #0af5fe;
-}
-.contactForm .dataBox fieldset input:active, .contactForm .dataBox fieldset input:focus {
-  border: none;
-  border-bottom: 1px solid #0af5fe;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  background: black;
-  color: lighten;
-  border-width: thick;
-}
-.contactForm .dataBox .emailBox {
-  width: 90%;
-}
-.contactForm .dataBox select {
-  width: 11vw;
-  height: 5vh;
-  background: black;
-  color: rgba(247, 179, 4, 0.7);
-  font-size: 1.8rem;
-}
-.contactForm .dataBox select .optionsItem {
-  width: 100%;
-  height: 100%;
-}
-.contactForm .dataBox select .optionsItem:hover, .contactForm .dataBox select .optionsItem:active, .contactForm .dataBox select .optionsItem:focus {
-  background: #0af5fe;
-}
-.contactForm .dataBox .msgBox {
-  width: 10vw;
-  height: 10vh;
-  margin: 1%;
-}
-.contactForm .contactMsgBox {
-  width: 38vw;
-  height: 36vh;
-  background: rgba(0, 0, 0, 0.3);
-  border: 0.5px solid #0af5fe;
-  color: rgba(247, 179, 4, 0.7);
-  font-size: 1.8rem;
-  border: none;
-  margin: 0 auto;
-  margin-left: 2%;
-}
-.contactForm .contactMsgBox:focus {
-  border: 0.5px solid #0af5fe;
-}
-.contactForm .btnContainer {
-  width: 25vh;
-  height: 6vh;
-  margin: 0.5vh;
-  padding: 0 auto;
-}
-.contactForm .btnContainer .formBtn {
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  font-size: 3rem;
-  padding: 0.5%;
-  border: 0.5px solid #0af5fe;
-  color: white;
-  cursor: pointer;
-  position: relative;
-  z-index: 0;
-}
-.contactForm .btnContainer .formBtn:before {
-  content: "";
-  background: linear-gradient(45deg, #00f14a, #4a3103, #fff, #f7b304, #0af5fe);
-  position: absolute;
-  top: -3px;
-  left: -3px;
-  background-size: 400%;
-  z-index: -1;
-  filter: blur(5px);
-  width: calc(100% + 4px);
-  height: calc(100% + 4px);
-  -webkit-animation: glowing 20s linear infinite;
-          animation: glowing 20s linear infinite;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
-  border-radius: 10px;
-}
-.contactForm .btnContainer .formBtn:active {
-  color: #000;
-}
-.contactForm .btnContainer .formBtn:active:after {
-  background: transparent;
-}
-.contactForm .btnContainer .formBtn:hover:before {
-  opacity: 1;
-}
-.contactForm .btnContainer .formBtn:after {
-  z-index: -1;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #111;
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+.footerSection {
+  color: yellow;
+  background-color: black;
+  margin: 0;
+  padding: 0;
 }
 
 @media screen and (max-width: 768px) {
+  .heroMessageBox {
+    width: 95vw;
+    height: 50vh;
+    left: 10vw;
+    border: 1px dashed yellow;
+  }
+  .heroMessageBox p {
+    font-size: 3rem;
+    margin-left: 3%;
+  }
+  .heroMessageBox .keywordOne {
+    color: rgb(0, 241, 74);
+    font-weight: 500;
+  }
+  .heroMessageBox .keywordTwo {
+    color: rgba(247, 179, 4, 0.7);
+    font-weight: 500;
+  }
+  .heroMessageBox .contactBtn {
+    font-size: 2.2rem;
+    font-weight: 500;
+    width: 20vw;
+  }
+  .heroMessageBox .contactBtn .contactBtnText {
+    background: green;
+  }
   .contactSection {
     height: 120vh;
   }
@@ -689,11 +566,5 @@
   .contactSection .formBtn {
     font-size: 1.4rem;
   }
-}
-.footerSection {
-  color: yellow;
-  background-color: black;
-  margin: 0;
-  padding: 0;
 }
 /*# sourceMappingURL=index.module.css.map */

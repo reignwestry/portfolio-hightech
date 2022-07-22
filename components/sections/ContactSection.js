@@ -16,7 +16,7 @@ export default  function contactSection(){
                 
             
             <div className={styles.contactInfoBox}>
-                <p>If you have any opportunities? I will always respond within 24hrs</p>
+                <p>If you have any opportunities send me a message? </p>
                 <div className={styles.contactFormBox}>
                     <Form />
                 </div>

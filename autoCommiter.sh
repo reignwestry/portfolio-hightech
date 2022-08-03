@@ -1,5 +1,5 @@
 #!/bin/sh
-cd D:\.PROJECTS\....PortfolioHighTech\autoCommiter.sh
+cd /d/.PROJECTS/....PortfolioHighTech/autoCommiter.sh
 git add --all
 timestamp() {
   date +"at %H:%M:%S on %d/%m/%Y"

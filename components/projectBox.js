@@ -3,37 +3,38 @@ import dumbyImg from './../imgs/showcase/dumby-img.jpg';
 import Link from 'next/link';
 
 import styles from './../styles/index.module.scss';
-//todo convert all project data to projects.json and pass as a prop
+//todo convert all project data to project.json and pass as a prop
 
-const projects = {
-    name: "Project Name",
-    image: dumbyImg.src,
-    type: "website", //website, app, etc.
-    tech: "HTML, CSS, JavaScript, etc",
-    link: "/project/path",
-    githubLink: "/github/path"
-}
 
-export default function projectBox(props) {
+    const project = {
+        name: "Project Name",
+        image: dumbyImg.src,
+        type: "website",
+        tech: "HTML, CSS, JavaScript, etc",
+        link: "./projects/",
+        github: "github link"
+    };
+
+
+export default function projectBox (){
     return (
-        <Link href={projects.link}>
-            <div className={styles.projectBoxShadow} style={{ backgroundImage: `url(${projects.image})` }}>
+        <Link href={project.link} passHref>
+            <div className={styles.projectBoxShadow} style={{ backgroundImage: `url(${project.image})` }}>
                             
                 <div className={styles.projectBox}>
                     <div className={styles.projectData}>
                         <div className={styles.projectBasicData}>
-                            <h2>{projects.name}</h2>
-                            <span>{projects.type}</span>  
+                            <h2>{project.name}</h2>
+                            <span>{project.type}</span>
                         </div>
                         <div className={styles.projectTechData}>
                             <h4>Technologies</h4>
-                            <p className={styles.techTypes}>{projects.tech}</p>
-                            <span className={styles.gLink}><Link href={projects.githubLink}>Github</Link></span>
+                            <p className={styles.techTypes}>{project.tech}</p>
+                            <span className={styles.gLink}><Link href={project.githubLink}>Github</Link></span>
                         </div>
-                    </div>
-                               
+                    </div>             
                 </div>
             </div>
         </Link>
-    )
+    );
 }

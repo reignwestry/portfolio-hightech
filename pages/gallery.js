@@ -2,8 +2,7 @@
 //Components
 import HeadSection from './../components/Head';
 import HeroSection from '../components/sections/HeroSection';
-import ShowcaseSection from '../components/sections/ShowcaseSection';
-import AboutSection from '../components/sections/AboutSection';
+import GallerySection from '../components/sections/gallerySection';
 import FooterSection from '../components/sections/Footer';
 
 
@@ -12,8 +11,14 @@ export default function Gallery() {
         <div>
             <HeadSection />
             <HeroSection />
-            <ShowcaseSection />
-            <AboutSection />
+            <h1>Gallery</h1>
+            {/* <div className={styles.sectionHeader}>
+                
+                <h1>Gallery</h1>
+                
+            </div>
+            <span>Here is a showcase of my best and latest projects</span> */}
+            <GallerySection />
             <FooterSection />
 
         </div>

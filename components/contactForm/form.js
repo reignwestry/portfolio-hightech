@@ -38,14 +38,14 @@ class contactForm extends Component  {
         this.handleSend();
     }
 
-    // handleSend() {
-        // let fname = this.state.fname;
-        // let lname = this.state.lname;
-        // let email = this.state.email;
-        // let serviceType = this.state.serviceType;
-        // let message = this.state.message;
-        // console.log(fname, lname, email, serviceType, message);
-    // }
+    handleSend() {
+        let fname = this.state.fname;
+        let lname = this.state.lname;
+        let email = this.state.email;
+        let serviceType = this.state.serviceType;
+        let message = this.state.message;
+        console.log(fname, lname, email, serviceType, message);
+    }
 
     render(props){
     return (
@@ -53,12 +53,12 @@ class contactForm extends Component  {
             <div className={styles.dataBox}>
                 <fieldset>
                     <label htmlFor="fname">First Name</label><br />
-                    <input type="text" id="fname" name="fname" value={this.state.fname} onChange={this.inputChange} placeholder="Jane"></input>
+                    <input type="text" id="fname" name="fname" value={this.state.value} onChange={this.inputChange} placeholder="Jane"></input>
                 </fieldset>
 
                 <fieldset>
                     <label htmlFor="lname">Last Name</label><br />
-                    <input type="text" id="lname" name="lname" value={this.state.value} placeholder="Smoe"></input>
+                    <input type="text" id="lname" name="lname" value={this.state.value} placeholder="Smoe" onChange={this.inputChange} ></input>
                 </fieldset>
                 
             </div>
@@ -66,15 +66,15 @@ class contactForm extends Component  {
             <div className={styles.dataBox}>
                 <fieldset className={styles.emailBox}>
                     <label htmlFor="email">Email</label><br />
-                    <input type="email" id="email" name="email" placeholder="12345@youremail.com" value={this.state.value}  ></input>
+                    <input type="email" id="email" name="email" placeholder="12345@youremail.com" value={this.state.value} onChange={this.inputChange} ></input>
                 </fieldset>
             </div>
 
             <div className={styles.dataBox}>
                 <fieldset>
                     <p>How can I help you?</p>
-                    <select id='serviceType' className={styles.serviceType}  value={this.state.value}>
-                        <option className={styles.optionsItem} selected>Consultation</option>
+                    <select id='serviceType' className={styles.serviceType}  value={this.state.value} onChange={this.inputChange} >
+                        <option className={styles.optionsItem} defaultValue>Consultation</option>
                         <option className={styles.optionsItem}>Website</option>
                         <option className={styles.optionsItem}>App</option>
                         <option className={styles.optionsItem}>Repair</option>

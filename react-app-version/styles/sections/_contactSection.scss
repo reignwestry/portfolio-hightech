@@ -1,0 +1,61 @@
+@use './../components/mixins';
+@use './../components/variables';
+
+
+//Contact Section
+
+.contactSection{
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    @include mixins.parallaxBackground;
+
+    .titleBox{
+            // border: 1px dashed orange;
+            width: 30vw;
+            margin-top: 0;
+            margin-right: 70vw;
+
+        .contactHeader{
+            @include mixins.FontStyleOne;
+            // border: 1px dashed white;
+            margin: 0 auto;
+            width: 30vw;
+        }
+
+        hr{
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
+
+    .contactInfoBox{
+        // border: 1px dashed red;
+        height: 71.5vh;
+        width: 100vw;
+        margin: 0;
+        color: white;
+        font-size: 2rem;
+
+        p{
+            margin: 1%;
+            margin-left: 3%;
+            // font-size: 85%;
+            width: 38vw;
+        }
+ 
+    }
+
+
+}
+
+.contactFormBox{
+    display:flex;
+    flex-direction: row;
+    
+
+
+        
+}
+

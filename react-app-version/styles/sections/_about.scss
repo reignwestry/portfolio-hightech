@@ -1,0 +1,77 @@
+@use './../components/variables';
+@use './../components/mixins';
+
+
+.aboutSection{
+    width: 100vw;
+    height: 100vh;
+    color: variables.$Third-color;
+    margin: 0;
+    @include mixins.parallaxBackground;
+
+
+
+    .sectionHeader{
+        // border: 1px dashed;
+        height:  10vh;
+        @include mixins.FontStyleOne;
+    }
+
+    .aboutMessage{
+        margin-top: 10vh;
+        margin-left: 5vw;
+        width: 70%;
+        font-size: 1.6rem;
+
+        .aboutFirstMessage{
+            // border: 1px dashed;
+            margin-bottom: 8vh;
+        }
+
+        .knowledgePathBox{
+            display: flex;
+            flex-direction: row;
+
+            .knowledgePathColumn{
+                width: 32%;
+
+                ul{
+                    color: variables.$Fourth-color;
+                    list-style:none;
+
+
+                    .listTitle{
+                        // list-style:none;
+                        color: variables.$Primary-color;
+                    }
+                    
+                    li{
+                        text-align: center;
+                        text-decoration: none;
+                    }
+                }
+
+                .toolsList{
+                    color: variables.$Fifth-color;
+                }
+            }
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px){
+    .aboutSection{
+        height: auto;
+    }
+    .aboutMessage{
+        width: 90%;
+        .knowledgePathBox{
+            width: 100%;
+            font-size: 80%;
+            .knowledgePathColumn{
+                width: 30%;
+            }
+        }
+    }
+}

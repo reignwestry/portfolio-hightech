@@ -1,0 +1,88 @@
+@use 'components/variables';
+@use 'components/mixins';
+
+@media screen and (max-width: 768px){
+
+    //? Hero Section
+        .heroMessageBox{
+        width: 95vw;
+        height: 50vh;
+        left: 10vw;
+        border: 1px dashed yellow;
+
+        p{
+            font-size: 3rem;
+            margin-left: 3%;
+
+        }
+
+        .keywordOne{
+                color: variables.$Primary-color;
+                font-weight: 500;
+        }
+
+        .keywordTwo{
+                color: variables.$Fourth-color;
+                font-weight: 500;
+        }
+
+        .contactBtn{
+            font-size: 2.2rem;
+            font-weight: 500;
+            width: 20vw;
+
+            .contactBtnText{
+                background: green;
+            }
+        }
+    }
+
+    //? Contact Form
+    .contactSection{
+        height: 120vh;
+
+        .titlebox{
+            border: blue;
+        }
+        .contactInfoBox p{
+            margin-left: 5%;
+            margin-bottom: 2%;
+        }
+        .contactFormBox{
+            height: auto;
+
+        }
+
+        .contactForm{
+            width: 100%;
+        }
+
+        .dataBox{
+            border: 1px dashed white;
+        }
+
+        select{
+            border: 1px dashed red;
+            width: 100%;
+        }
+
+        .contactMsgBox{
+            width: 100%;
+            margin: 0;
+        }
+
+        .contactForm{
+            margin: 0 2%;
+            height: auto;
+
+            .serviceType{
+
+            }
+        }
+
+        //? Contact Form Btn
+        .formBtn{
+            font-size: 1.4rem;
+        }
+    } 
+}
